@@ -46,7 +46,7 @@ jobs:
     needs: [setup, release]
     runs-on: windows-11-arm
     env:
-      PACKAGENAME: ${{ needs.setup.outputs.PACKAGE_PREFIX }}_windows_nosr_x64
+      PACKAGENAME: ${{ needs.setup.outputs.PACKAGE_PREFIX }}_windows_nosr_arm64
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python 3.13
