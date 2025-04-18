@@ -1,4 +1,4 @@
-PySide6==6.5.3
+PySide6
 websocket-client
 #requests==2.26.0
 #urllib3==1.25.11
