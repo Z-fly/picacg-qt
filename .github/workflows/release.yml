@@ -58,8 +58,8 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        Invoke-WebRequest -Uri "https://github.com/user-attachments/files/19810486/lxml-5.3.1-cp313-cp313-win_arm64.whl.zip" -OutFile "D:\lxml.whl"
-        pip install "D:\lxml.whl"
+        Invoke-WebRequest -Uri "https://github.com/user-attachments/files/19810486/lxml-5.3.1-cp313-cp313-win_arm64.whl.zip" -OutFile "C:\lxml.whl"
+        pip install "C:\lxml.whl"
         pip install pyinstaller
         pip install -r src\requirements.txt
     - name: Build
