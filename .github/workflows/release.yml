@@ -42,7 +42,6 @@ jobs:
           draft: true
           prerelease: true
 
-
   windows:
     needs: [setup, release]
     runs-on: windows-latest
@@ -64,7 +63,6 @@ jobs:
           Invoke-WebRequest -Uri "https://github.com/upx/upx/releases/download/v5.0.1/upx-5.0.1-win64.zip" -OutFile "upx.zip"
           Expand-Archive -Path "upx.zip" -DestinationPath "D:\"
           Remove-Item "upx.zip"
-		  
       - name: Build
         run: |
           cd src
@@ -174,3 +172,4 @@ jobs:
           asset_path:         ${{ env.PACKAGENAME }}.7z
           asset_name:         ${{ env.PACKAGENAME }}.7z
           asset_content_type: application/x-7z-compressed
+
